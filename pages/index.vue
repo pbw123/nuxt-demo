@@ -7,6 +7,7 @@
       </h1>
       <h2 class="subtitle">
         My stupendous Nuxt.js project
+        {{title}}
       </h2>
 
     </div>
@@ -19,7 +20,13 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
-  }
+  },
+    data(){
+      return{
+          title:'title67889'
+      }
+    }
+
 }
 </script>
 

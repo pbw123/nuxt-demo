@@ -8,7 +8,17 @@
 
 <script>
     export default {
-        name: "index"
+        name: "index",
+        data(){
+            return{
+                title:'标题1'
+            }
+        },
+        head(){
+            return{
+                title: this.title
+            }
+        }
     }
 </script>
 
