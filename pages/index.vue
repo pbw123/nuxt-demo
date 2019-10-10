@@ -16,6 +16,7 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import axios from 'axios'
 
 export default {
   components: {
@@ -25,6 +26,10 @@ export default {
       return{
           title:'title67889'
       }
+    },
+    async asyncData () {
+        let { data } = await axios.get(`https://api.apiopen.top/searchPoetry?name=古风二首%20二`)
+        return { title: data.result }
     }
 
 }
