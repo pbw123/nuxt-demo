@@ -11,7 +11,9 @@
 
 <script>
     export default {
-        name: "person"
+        name: "person",
+        layout:'blog'
+
     }
 </script>
 
