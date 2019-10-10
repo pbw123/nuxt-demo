@@ -1,5 +1,5 @@
 <template>
-  <div style="background: #3b8070">
+  <div class="title">
     <div>我的博客导航栏在这里</div>
     <nuxt/>
   </div>
@@ -11,6 +11,6 @@
     }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+@import "../assets/scss/index.scss";
 </style>
